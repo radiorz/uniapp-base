@@ -24,7 +24,7 @@ export default {
 <script setup lang="ts"></script>
 
 <template>
-  <div class="TheHello">TheHello</div>
+  <div>TheHello</div>
 </template>
 
 <style lang="css" scoped></style>

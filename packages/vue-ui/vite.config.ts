@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./lib/main.ts",
-      name: "uniapp-ui",
+      name: "vue-ui",
       fileName: "lib",
     },
     rollupOptions: {
@@ -14,7 +14,6 @@ export default defineConfig({
         globals: {
           vue: "vue",
         },
-        inlineDynamicImports: true,
       },
     },
   },

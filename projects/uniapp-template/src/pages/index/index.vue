@@ -3,17 +3,23 @@
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
+      <!-- <TheHello></TheHello>
       <TheHello></TheHello>
       <TheHello></TheHello>
       <TheHello></TheHello>
-      <TheHello></TheHello>
-      <TheHello></TheHello>
+      <TheHello></TheHello> -->
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { TheHello } from "uniapp-ui";
+import { hello } from "common";
+hello("123");
+hello("123");
+hello("123");
+console.log(`123`, typeof hello, hello());
+import { openBlock, createElementBlock } from "vue";
+console.log(`TheHello`, openBlock);
 import { ref } from "vue";
 const title = ref("Hello");
 </script>
