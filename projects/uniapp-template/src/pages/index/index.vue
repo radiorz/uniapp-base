@@ -1,7 +1,8 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
+    <view class="text-area"
+      >123
       <text class="title">{{ title }}</text>
       <!-- <TheHello></TheHello>
       <TheHello></TheHello>
@@ -14,12 +15,13 @@
 
 <script setup lang="ts">
 import { hello } from "common";
-hello("123");
+const a = hello("123");
+console.log(`a`, a);
 hello("123");
 hello("123");
 console.log(`123`, typeof hello, hello());
-import { openBlock, createElementBlock } from "vue";
-console.log(`TheHello`, openBlock);
+import { sleep } from "utils";
+console.log(`sleep`, sleep);
 import { ref } from "vue";
 const title = ref("Hello");
 </script>

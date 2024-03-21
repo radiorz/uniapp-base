@@ -54,8 +54,9 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-3090920231225001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090920231225001",
     "common": "workspace:*",
-    "utils": "workspace:*",
     "uniapp-ui": "workspace:*",
+    "utils": "workspace:*",
+    "vite-plugin-node-polyfills": "^0.21.0",
     "vue": "^3.4.21",
     "vue-i18n": "^9.10.2"
   },
