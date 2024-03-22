@@ -2,7 +2,8 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area"
-      >123
+      >
+      <uu-hello></uu-hello>
       <text class="title">{{ title }}</text>
       <!-- <TheHello></TheHello>
       <TheHello></TheHello>
@@ -14,14 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { hello } from "common";
-const a = hello("123");
-console.log(`a`, a);
-hello("123");
-hello("123");
-console.log(`123`, typeof hello, hello());
-import { sleep } from "utils";
-console.log(`sleep`, sleep);
+
 import { ref } from "vue";
 const title = ref("Hello");
 </script>
